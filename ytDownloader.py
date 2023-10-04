@@ -1,14 +1,10 @@
-from pytube import YouTube
-from sys import argv
+# This program adds two numbers
 
-link = argv[1]
-yt = YouTube(link)
+num1 = 1.5
+num2 = 6.3
 
-print("Title: ", yt.title)
+# Add two numbers
+sum = num1 + num2
 
-print("View: ", yt.views)
-
-yd = yt.streams.get_highest_resolution()
-
-# ADD FOLDER HERE
-yd.download('./YTfolder')
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
